@@ -1,0 +1,23 @@
+https://www.youtube.com/watch?v=eYQyqf-DtCQ
+https://www.youtube.com/watch?v=NEKImNnYB70
+
+Get Vs Post
+
+Get - > read only, read the table. but can create row it's violation of write.		
+Post - > suppose to create in server. 
+
+Postman - Installed, 
+
+As opposed to HTTP/1.1, which keeps all requests and responses in plain text format, HTTP/2 
+uses the binary framing layer to encapsulate all messages in binary format, while still 
+maintaining HTTP semantics, such as verbs, methods, and headers. 
+
+HTTP/2 came into use, which offered several methods to decrease latency, especially 
+when dealing with mobile platforms and server-intensive graphics and videos.
+
+As mentioned in the previous section, HTTP/1.1 and HTTP/2 share semantics, ensuring 
+that the requests and responses traveling between the server and client in both protocols 
+reach their destinations as traditionally formatted messages with headers and bodies, using 
+familiar methods like GET and POST. But while HTTP/1.1 transfers these in plain-text messages, 
+HTTP/2 encodes these into binary, allowing for significantly different delivery model possibilities.
+
