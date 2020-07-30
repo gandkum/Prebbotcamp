@@ -1,0 +1,14 @@
+Access to XMLHttpRequest at **** from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+Access to XMLHttpRequest at 'https://api.domainsdb.info/v1/domains/search?domain=facebook&zone=com' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+
+HTTP Response header tells the browser wether or not they are allowed to access a resource based on their orgin.
+
+
+https://stackoverflow.com/questions/10636611/how-does-access-control-allow-origin-header-work
+When Site A tries to fetch content from Site B, Site B can send an Access-Control-Allow-Origin response header to tell the browser that the content of this page is accessible to certain origins. (An origin is a domain, plus a scheme and port number.) By default, Site B's pages are not accessible to any other origin; using the Access-Control-Allow-Origin header opens a door for cross-origin access by specific requesting origins.
+
+For each resource/page that Site B wants to make accessible to Site A, Site B should serve its pages with the response header:
+
+Access-Control-Allow-Origin: http://siteA.com
+Modern browsers will not block cross-domain requests outright. If Site A requests a page from Site B, the browser will actually fetch the requested page on the network level and check if the response headers list Site A as a permitted requester domain. If Site B has not indicated that Site A is allowed to access this page, the browser will trigger the XMLHttpRequest's error event and deny the response data to the requesting JavaScript code.
