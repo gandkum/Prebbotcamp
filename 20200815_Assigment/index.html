@@ -1,0 +1,226 @@
+<html>
+<head>
+	<title> Request for New PAN card or/and Changes or Correction in Pan data </title>
+	<meta http-equiv="X-UA-Compitable" content="IE-Edge">
+	<meta charset="UTF-8">
+	<title> DSC PAN Card Correction Form </title>
+</head>
+
+<body bgcolor= "#FFFFDD" leftmargin="0" topmargin="0" style >
+	<div>
+	<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="FFCC00" ">
+		<tbody>
+			<tr>
+				<td colspan="4" align="CENTER" >
+					<b>
+					<font color = "#FFFFF"> Request For New PAN Card Or/And Changes Or Correction in PAN Data </font>
+					</b>
+					<br>
+					<i>
+					<font color = "#FFFFF"> Fields marked with </font>
+					<font color = "Red">*</font>
+					<font color = "FFFFF">(asterisk) are mandatory</font>
+					</i>
+					<i>
+					<font color="#FFFFFF">To avoid mistake(s), please refer </font>
+					<font color="#FF9900">guidelines</font></a>
+					<font color="#FFFFF"> and </font>
+					<font color="#FF9900">instructions</font></a>
+					</i>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	</div >
+	<form name="newPanCorrect">
+		<table border="1" cellpadding="0" cellspacing="0" width="100%">
+			<tbody>
+			<tr bgcolor="#e0e0e0">
+				<td>&nbsp;</td>
+				<td colspan='2' width="98%">
+					<b>
+						<font color="RED">*</font>
+						"whether Indian Citizen"
+					</b>
+					<input type= "radio" name="PAN_CTZN_FLG" value="Y">
+					<input type= "radio" name="PAN_CTZN_FLG" value="N">
+				</td>	
+			</tr>
+			
+			<tr> 
+				<td width="2%">&nbsp;</td>
+				<td colspan='2' width="98%">
+				<b>
+					<font color="RED">*</font>
+					"Permanent Account Numnber PAN"
+				</b>
+				<input type= "test" name="PAN_NUM" value size="20" maxlength="10">
+			</tr>
+			
+			<tr>
+				<td> 
+				<input type="checkbox" name="PAN_MN_NM_CHK" value='Y'>
+				</td>
+				<td colspan='2'> 
+				<b>
+				<font color='RED'>*</font>
+				"1.Name"
+				</b>
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td colspan="2">
+				<b> 
+				Title
+				</b>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Shri/Mr
+				<input type="radio" name="PAN_MN_TITL" >
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Smt./Mrs.
+				<input type="radio" name="PAN_MN_TITL">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				Kumari/Ms
+				<input type="radio" name="PAN_MN_TITL">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="#a0a0a0d0d0d0">
+				M/s
+				</font>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>&nbsp;</td>
+				<td colspan="2">
+				<table width="100%" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+					<td>
+					<b>Last Name/Surname</b>
+					<br><input type="text" name="PAN_LST_MN_NM" >
+					</td>
+					<td><b>First Name</b><br><input type="text" name="PAN_FST_MN_NM" ></td>
+					<td><b>Middle Name</b><br><input type="text" name="PAN_MDL_MN_NM" ></td>
+					</tr>
+				</tbody></table>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+				Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only
+				</td>
+				<td>
+				yes
+				<input type="radio" name="sin_mother_flag" >
+				No
+				<input type="radio" name="sin_mother_flag" >
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+				<font>*</font>
+				4. Select Parent name which is to be printed on the card
+				</td>
+				<td>
+				Father's Name
+				<input type="radio" name="sin_mother_flag" >
+				Mother's Name
+				<input type="radio" name="sin_mother_flag" >
+				</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>
+				<font>*</font>
+				5.Date of Birth/Incorporation/Agreement/Partnership<br>
+				or Trust Deed/Formation of Body of Individuals/<br>
+				Association of Persons
+				</td>
+				<td>
+				<table cellpadding="0" cellspacing="0" border="0">
+				<tbody>
+				<tr>
+				<td valign="TOP">
+				DD
+				<br>
+				<select name="DOB_DD">
+				<option> DD </option>
+				<option value="01"> 1 </option>
+				<option value="02"> 2 </option>
+				<option value="31"> 3 </option>
+				</td>
+				<td valign="TOP">
+				MM
+				<br>
+				<select name="DOB_DD">
+				<option> MM </option>
+				<option value="01"> 1 </option>
+				<option value="02"> 2 </option>
+				<option value="31"> 12 </option>
+				</td>
+				<td valign="TOP">
+				YYYY
+				<br>
+				<input type="text" value size = "4">
+				</td>
+				
+				</tr>
+				</tbody>
+				</table>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+		<br>
+	For Paperless PAN Application: " 
+	<input type="radio" id="show" name="app_name" value="Y" checked="checked"> YES
+	<input type="radio" id="show" name="app_name" value="Y"> NO "
+	<br>
+	<br>
+	<table cellpadding="0" cellspacing="0" border="0">
+	<tbody>
+	<tr> 
+		<td align="left">
+		Upload Photo
+		</td>
+		<td >&nbsp</td >
+		<td >
+		<input type="file">
+		</td>
+		<td align="left">
+		Upload Signature
+		</td>
+		<td >&nbsp</td >
+		<td >
+		<input type="file">
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	
+		<table >
+	<tbody>
+	<tr> 
+		<td align="left">
+		Already Uploaded the Document
+		</td>
+		<td >&nbsp</td >
+		<td >
+		<textarea rows="7" columns="40" > </textarea>
+		</td>
+	</tr>
+	</tbody>
+	</table>
+	<button type="submit">Submit Button</button>
+	
+</form>
+</body>
+
+
+
+</html>
